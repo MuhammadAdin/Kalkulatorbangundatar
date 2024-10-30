@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#3a82f0"
+    tools:context=".Persegi">
+
+    <LinearLayout
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:padding="16dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:background="@drawable/radius">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kalkulator Persegi"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:layout_gravity="center" />
+
+        <EditText
+            android:id="@+id/inputSisi"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Masukkan Panjang Sisi"
+            android:inputType="numberDecimal"/>
+
+        <Button
+            android:id="@+id/buttonHitung"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hitung"
+            android:background="#dabc15"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:id="@+id/textLuas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Luas: "
+            android:layout_marginTop="16dp"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/textKeliling"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Keliling: "
+            android:layout_marginTop="8dp"
+            android:textSize="18sp"/>
+
+
+    </LinearLayout>
+</LinearLayout>
